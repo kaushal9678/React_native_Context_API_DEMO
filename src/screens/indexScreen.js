@@ -14,8 +14,18 @@ const IndexScreen =({navigation}) =>{
 const {state,addBlogPost,deleteBlogPost,getBlogPost} = useContext(Context);
 
 useEffect(()=>{
-getBlogPost();
-},[]);
+  getBlogPost();
+const listener =  navigation.addListener('didFocus',()=>{
+    getBlogPost();
+  });
+  return () =>{
+    listener.remove();
+  };
+},
+
+[]);
+
+
   return <View>
 
     <FlatList data={state}
