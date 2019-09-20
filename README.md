@@ -1,4 +1,4 @@
-# React native ContextAPI demo with hooks useState, useReducer, useContext
+# React native ContextAPI demo with hooks useState, useReducer, useContext, useEffect
 
 This demo app build with expo and shows how to use hooks in react-native version 0.60 with context ContextAPI.
 In this sample demo, following functionalities are implemented
