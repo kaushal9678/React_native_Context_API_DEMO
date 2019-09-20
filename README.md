@@ -20,11 +20,13 @@ In this sample demo, following functionalities are implemented
   > ** if you are going to use react-navigation version 4.0 or above you need to install separate dependencies for navigation
       like I installed in this demo
 
-      ```
+
           react-navigation: "^4.0.4", // it is used for createAppContainer
           react-navigation-stack  // it is used for createStackNavigator
 
-      ```
+    ** Similarly you have to install Tabbar dependency
+
+
 
 ## Quick Start
 
