@@ -13,6 +13,37 @@ In this sample demo, following functionalities are implemented
 * master -> brach is without api
 * dev -> branch is with api
 
+
+## For local Server setup I used following dependencies
+```
+  json-server
+  ngrok
+
+```
+
+
+> ** To  run local server on your machine open terminal and go to path till
+ ```  
+  cd server/jsonServer
+  ```
+  > * run following commands on separate terminal
+
+  ```
+    npm run db
+
+  ```  
+
+  ```
+    npm run tunnel
+
+  ```  
+  * if everything setup perfectly then it will run image like followings in terminal
+  > Image of local db
+    ![alt text](images/server.png)
+  > image of tunnel
+   ![alt text](images/ngrok.png)
+
+
 ## Versions
 
       react-native-cli: 2.0.1
