@@ -16,15 +16,14 @@ In this sample demo, following functionalities are implemented
 
 ## Quick Start
 
-      ```
+    ```
     run yarn or yarn install
-
     ```
 
-     ```
+    ```
      expo start
 
-     ```
+    ```
 
 ## Dependencies
 ```
@@ -39,7 +38,7 @@ In this sample demo, following functionalities are implemented
 "react-navigation-stack": "^1.7.3"
 
 ```
-### > Attachments
+###  Attachments
 ![alt text](images/1.png)
 ![alt text](images/2.png)
 ![alt text](images/3.png)
