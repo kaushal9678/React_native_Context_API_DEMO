@@ -8,10 +8,15 @@ In this sample demo, following functionalities are implemented
 * Listing of added Blogs
 * Use of Navigation
 
-** if you are going to use react-navigation version 4.0 or above you need to install separate dependencies for navigation like I installed in this demo
+** if you are going to use react-navigation version 4.0 or above you need to install separate dependencies for navigation
+like I installed in this demo
 
-``` react-navigation": "^4.0.4",// For createAppContainer
-    react-navigation-stack ``` // it is used for createStackNavigator
+```
+    react-navigation: "^4.0.4", // it is used for createAppContainer
+    react-navigation-stack  // it is used for createStackNavigator
+
+```
+
 
 ## Versions
 
