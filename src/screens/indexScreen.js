@@ -15,7 +15,7 @@ const {state,addBlogPost,deleteBlogPost} = useContext(Context);
   return <View>
 
     <FlatList data={state}
-      keyExtractor={blogPost => blogPost.title}
+      keyExtractor={blogPost => blogPost.id.toString()}
       renderItem = {({item}) => {
           return <TouchableOpacity
                       onPress={()=>navigation.navigate('Show',{id:item.id})}>

@@ -11,7 +11,10 @@ const blogReducer =(state,action)=>{
         return state.filter((blogPost)=> blogPost.id != action.payload);
     case "edit_blogpost":
 
-        return [...state,{id:action.payload.id ,title:action.payload.title,content:action.payload.content}];
+        return state.map((blogPost)=>{
+          return blogPost.id === action.payload.id ?  action.payload : blogPost;
+
+      })
 
     default:
 
@@ -29,8 +32,9 @@ return  (id)  =>  {
  };
 }
 const editBlogPost=(dispatch)=>{
-return  (id,title,content)  =>  {
-   dispatch ({type:"edit_blogpost",payload:{id,title,content}})
+return  (id,title,content,callBack)  =>  {
+   dispatch ({type:"edit_blogpost",payload:{id,title,content}});
+   callBack()
  };
 }
 

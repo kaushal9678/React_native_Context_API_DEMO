@@ -1,31 +1,36 @@
-import React, { Component } from 'react';
+import React, { Component,useState, useContext } from 'react';
 import {
   View,
   StyleSheet,
-  Button
+  Button,
   Text,TextInput
 } from 'react-native';
 
-const BlogForm=(props)=>{
-  const [title,setTitle] = useState('');
+const BlogForm=({onSubmit,initialValues})=>{
+  const [title,setTitle] = useState(initialValues.title);
 
-  const [content,setContent] = useState('');
+  const [content,setContent] = useState(initialValues.content);
+
 return(
   <View>
       <Text style={styles.label}>Enter Title: }</Text>
-          <TextInput style={styles.input} value={props.title} onChangeText={(text)=>setTitle(text)}/>
+          <TextInput style={styles.input} value={title} onChangeText={(text)=>setTitle(text)}/>
           <Text style={styles.label} > Enter Content:</Text>
-          <TextInput style={styles.input} value={props.content} onChangeText={(text)=>setContent(text)}/>
-          <Button title="Save" onPress={()=>{editBlogPost(navigation.getParam('id'),
-          title,
-          content,
-          ()=>{  navigation.navigate('Index');
-          });
-          }
-         }
+          <TextInput style={styles.input} value={content} onChangeText={(text)=>setContent(text)}/>
+          <Button title="Save Blog post" onPress={()=>onSubmit(title,content)}
+
+
       />
   </View>
 )
+}
+
+
+BlogForm.defaultProps = {
+  // that default props is used to assign initial
+  //value to a prop if prop is not passed from a parent Component.
+  //Like initialValues here not passed by createScreen and passed from editScreen;
+  initialValues:{title:"",content:""}
 }
 const styles=StyleSheet.create({
   input:{
