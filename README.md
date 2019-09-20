@@ -9,9 +9,9 @@ In this sample demo, following functionalities are implemented
 * Use of Navigation
 
 
-This respository has two branches
-master  brach is without api
-dev branch is with api
+> This respository has two branches
+* master -> brach is without api
+* dev -> branch is with api
 
 ## Versions
 
