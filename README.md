@@ -16,10 +16,18 @@ In this sample demo, following functionalities are implemented
 
 ## Quick Start
 
-    * > ```run yarn or yarn install ```
-    * > ```expo start ```
+      ```
+    run yarn or yarn install
+
+    ```
+
+     ```
+     expo start
+
+     ```
 
 ## Dependencies
+```
 "expo": "^34.0.1",
 "react": "16.8.3",
 "react-dom": "^16.8.6",
@@ -30,6 +38,7 @@ In this sample demo, following functionalities are implemented
 "react-navigation": "^4.0.4",
 "react-navigation-stack": "^1.7.3"
 
+```
 ### > Attachments
 ![alt text](images/1.png)
 ![alt text](images/2.png)
