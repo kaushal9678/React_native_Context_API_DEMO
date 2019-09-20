@@ -16,14 +16,12 @@ In this sample demo, following functionalities are implemented
 
 ## Quick Start
 
-    ```
-    run yarn or yarn install
-    ```
 
-    ```
-     expo start
+    * run yarn or yarn install
 
-    ```
+    * expo start
+
+
 
 ## Dependencies
 ```
